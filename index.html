@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>How's the Weather?</title>
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <link rel="apple-touch-startup-image" href="./images/startup.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./images/apple-icon.png"/>
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet"/>
+    <link href="css/normalize.css" rel="stylesheet"/>
+    <link href="css/main.css" rel="stylesheet"/>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script type="text/javascript" src="script/main.js"></script>
+  </head>
+  <body>
+
+    <div class="loading"></div>
+
+    <div class="container cf">
+
+      <div class="page align-center active" id="page1">
+        <h1>How's the Weather?</h1>
+        <form method="post" action="">
+          <input class="zip" type="text" name="zip" size="5" maxlength="5" placeholder="Zip Code"/>
+          <input type="submit" class="btn" value="Go"/>
+        </form>
+      </div>
+
+      <div class="page" id="page2">
+
+        <div class="conditions cf">
+          <h1><a href="#" class="btn go-back">&lt;</a> <span class="location"></span></h1>
+          <span class="weather"></span>
+          <div class="stats">
+            <div class="temperature">0°</div>
+            <div class="feels-like">Feels like <span class="feels-temp">0°</span></div>
+          </div>
+          <div class="stats">
+          </div>
+        </div>
+
+        <div class="forecast cf align-center">
+          <div class="daily day1">
+            <span class="weather small"></span>
+            <div class="day-forecast">
+              <strong></strong>
+              <div class="temp"></div>
+            </div>
+          </div>
+          <div class="daily day2">
+            <span class="weather small"></span>
+            <div class="day-forecast">
+              <strong></strong>
+              <div class="temp"></div>
+            </div>
+          </div>
+          <div class="daily day3">
+            <span class="weather small"></span>
+            <div class="day-forecast">
+              <strong></strong>
+              <div class="temp"></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="align-center">
+          <div class="switch">
+
+            <input type="radio" id="f" name="scale" value="F" checked/>
+            <label for="f">F°</label>
+
+            <input type="radio" id="c" name="scale" value="C"/>
+            <label for="c">C°</label>
+
+            <span class="switch-btn btn"></span>
+
+          </div>
+        </div>
+
+        <div class="footer align-center">Data provided by <img height="22" src="http://icons.wxug.com/logos/PNG/wundergroundLogo_black_horz.png"/></div>
+      </div>
+
+    </div>
+  </body>
+</html>
