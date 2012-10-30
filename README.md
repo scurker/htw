@@ -1,4 +1,4 @@
-htw
+How's the Weather?
 ===
 
-An HTML5 webapp demonstration
+This is a simple mobile webapp to demonstrate various features of HTML5 and how to utilize those features for mobile.
